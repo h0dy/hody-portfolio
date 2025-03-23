@@ -5,7 +5,7 @@ import HamNav from "./HamNav";
 
 const Navbar = () => {
   return (
-    <nav className="h-12 px-3 py-3">
+    <nav className="h-12 py-3 pb-5 text-xl">
       <div className="flex justify-between">
         <Logo />
         <NavList />
@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <HamNav />
       </div>
-      <div className="border-b border-1 border-black dark:border-white" />
+      <div className="border-b-2 border-foreground dark:border-white" />
     </nav>
   );
 };

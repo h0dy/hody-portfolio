@@ -7,7 +7,9 @@ const Container = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return <div className={cn("mx-auto container", className)}>{children}</div>;
+  return (
+    <div className={cn("mx-auto container px-3", className)}>{children}</div>
+  );
 };
 
 export default Container;
