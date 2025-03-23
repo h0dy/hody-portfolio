@@ -6,16 +6,14 @@ import {
   FaSass,
   FaBootstrap,
   FaNodeJs,
+  FaDiscord,
 } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiPrisma } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 
-import {
-  RiTailwindCssFill,
-  RiNextjsLine,
-  RiSupabaseFill,
-} from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
+import { Github, Instagram } from "lucide-react";
 // import { FaGolang } from "react-icons/fa6";
 
 type NavLink = {
@@ -24,7 +22,7 @@ type NavLink = {
 };
 
 export const navLinks: NavLink[] = [
-  { href: "#projects", label: "projects" },
+  { href: "/projects", label: "projects" },
   { href: "#stats", label: "stats" },
   { href: "#contact", label: "contact" },
 ];
@@ -117,9 +115,22 @@ export const BackEndTechnologies: TechItem[] = [
     icon: <SiPrisma />,
     url: "https://www.prisma.io/",
   },
+];
+
+export const socials: TechItem[] = [
   {
-    label: "Supabase",
-    icon: <RiSupabaseFill />,
-    url: "https://supabase.com/",
+    label: "Github",
+    icon: <Github />,
+    url: "https://github.com/h0dy",
+  },
+  {
+    label: "Instagram",
+    icon: <Instagram />,
+    url: "https://Instagram.com/h0dy",
+  },
+  {
+    label: "Discord",
+    icon: <FaDiscord />,
+    url: "https://discordapp.com/users/637722754791243873",
   },
 ];
