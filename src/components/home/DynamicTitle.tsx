@@ -28,7 +28,7 @@ const DynamicTitle = ({
 
   return (
     <h1 className={cn("hero-title", className)}>
-      <span>Hi I&apos;m </span>
+      <span>Hey! I&apos;m </span>
       <span ref={element} className="auto-type"></span>
     </h1>
   );

@@ -4,8 +4,8 @@ import { languages } from "@/utils/links";
 
 const LanguagesSection = () => {
   return (
-    <section id="languages">
-      <SectionTitle text="languages" />
+    <section id="languages" className="my-10">
+      <SectionTitle text="languages/frameworks" />
 
       <LanguagesGrid list={languages} />
     </section>

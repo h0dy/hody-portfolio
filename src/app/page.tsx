@@ -1,11 +1,15 @@
 import Hero from "@/components/home/Hero";
-import TechStack from "@/components/languages/LanguagesSection";
+import LanguagesSection from "@/components/languages/LanguagesSection";
+import FrontEndSection from "@/components/front-end/FrontEndSection";
+import BackEndSection from "@/components/back-end/BackEndSection";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <TechStack />
+      <LanguagesSection />
+      <FrontEndSection />
+      <BackEndSection />
     </>
   );
 };
