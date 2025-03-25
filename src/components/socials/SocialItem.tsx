@@ -1,10 +1,10 @@
-import { TechItem } from "@/utils/links";
+import { TechItem } from "@/utils/types";
 import { Button } from "../ui/button";
 import { Link } from "lucide-react";
 
 const SocialItem = ({ item }: { item: TechItem }) => {
   return (
-    <div className="card">
+    <div className="item">
       <div className="text-2xl">{item.icon}</div>
       <div className="w-40">
         <p className="capitalize text-xl ">{item.label}</p>

@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "../footer/Footer";
 
 const Container = ({
   children,
@@ -8,7 +10,11 @@ const Container = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("mx-auto container px-3", className)}>{children}</div>
+    <div className={cn("mx-auto container px-3", className)}>
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
   );
 };
 

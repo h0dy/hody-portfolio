@@ -20,9 +20,9 @@ const LinksDropdown = () => {
         <DropdownMenuTrigger asChild>
           <Button
             className="flex gap-4 max-w-[100px] cursor-pointer"
-            variant="default"
+            variant="ghost"
           >
-            <div className="mb-3">
+            <div className="">
               <LucideAlignLeft className="size-6 " />
             </div>
           </Button>

@@ -1,12 +1,12 @@
-import { TechItem } from "@/utils/links";
+import { TechItem } from "@/utils/types";
 import { Button } from "../ui/button";
 import { Link } from "lucide-react";
 
 const BackEndItem = ({ item }: { item: TechItem }) => {
   return (
-    <div className="card">
+    <div className="item">
       <div className="text-2xl">{item.icon}</div>
-      <div className="w-40">
+      <div className="mr-20">
         <p className="capitalize text-xl ">{item.label}</p>
       </div>
       <Button variant="link" size="icon" asChild>

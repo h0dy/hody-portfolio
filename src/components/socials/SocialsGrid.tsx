@@ -1,4 +1,4 @@
-import { TechItem } from "@/utils/links";
+import { TechItem } from "@/utils/types";
 import SocialItem from "./SocialItem";
 
 const SocialGrid = ({ list }: { list: TechItem[] }) => {

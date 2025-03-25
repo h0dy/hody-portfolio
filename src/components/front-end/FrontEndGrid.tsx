@@ -1,4 +1,4 @@
-import { TechItem } from "@/utils/links";
+import { TechItem } from "@/utils/types";
 import FrontEndItem from "./FrontEndItem";
 
 const FrontEndGrid = ({ list }: { list: TechItem[] }) => {

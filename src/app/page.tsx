@@ -3,6 +3,7 @@ import LanguagesSection from "@/components/languages/LanguagesSection";
 import FrontEndSection from "@/components/front-end/FrontEndSection";
 import BackEndSection from "@/components/back-end/BackEndSection";
 import SocialsSection from "@/components/socials/SocialsSection";
+import ProjectsSection from "@/components/projects/ProjectsSection";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <LanguagesSection />
       <FrontEndSection />
       <BackEndSection />
+      <ProjectsSection />
       <SocialsSection />
     </>
   );
