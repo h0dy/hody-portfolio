@@ -1,14 +1,14 @@
 import { TechItem } from "@/utils/types";
-import SocialItem from "./SocialItem";
+import GridItem from "./GridItem";
 
-const SocialGrid = ({ list }: { list: TechItem[] }) => {
+const GridContainer = ({ list }: { list: TechItem[] }) => {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center sm:place-items-baseline mt-5">
       {list.map((item) => {
-        return <SocialItem key={item.label} item={item} />;
+        return <GridItem key={item.label} item={item} />;
       })}
     </div>
   );
 };
 
-export default SocialGrid;
+export default GridContainer;

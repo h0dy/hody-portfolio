@@ -12,6 +12,8 @@ import { SiExpress, SiMongodb, SiPrisma } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 import portfolioImage from "@/../public/images/portfolio.png";
+import nextStoreImage from "@/../public/images/next-store.png";
+import MERNAuth from "@/../public/images/MERN-auth.png";
 
 import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
 import { Github, Instagram } from "lucide-react";
@@ -133,7 +135,7 @@ export const projects: Project[] = [
     image: portfolioImage,
     description: "you are in it :)",
     gitURL: "https://github.com/h0dy/hody-portfolio",
-    projectURL: "https://github.com/h0dy/hody-portfolio",
+    projectURL: "https://hody.dev",
     tags: ["tailwindcss", "nextjs", "react", "typescript"],
     featured: true,
   },
@@ -141,8 +143,9 @@ export const projects: Project[] = [
     id: "2",
     label: "next-store",
     description:
-      "ur adipisicing elit. Eos optio quisquam delectus accusantium dolores reiciendis sunt mollitia ad,",
+      "This is a typical e-commerce website that includes most of the essential features you'd expect from an e-commerce platform.",
     gitURL: "https://github.com/h0dy/next-store",
+    image: nextStoreImage,
     tags: [
       "tailwindcss",
       "nextjs",
@@ -155,10 +158,22 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    label: "next-store",
+    label: "MERN-auth",
+    description: "Full MERN stack Authentication",
+    gitURL: "https://github.com/h0dy/MERN-auth",
+    projectURL: "https://mern-auth-g5hn.onrender.com/login",
+    image: MERNAuth,
+    tags: ["tailwindcss", "react", "javascript", "expressjs", "mongodb"],
+    featured: true,
+  },
+  {
+    id: "4",
+    label: "YelpCamp",
+    image: portfolioImage,
     description:
-      "ur adipisicing elit. Eos optio quisquam delectus accusantium dolores reiciendis sunt mollitia ad, ",
-    gitURL: "https://github.com/h0dy/next-store",
+      "This is a project I built coding along as part of the Udemy course. This project focuses on back-end development, so there is no ReactJS and no complex UI; it relies on EJS and Bootstrap for the front end.",
+    gitURL: "https://github.com/h0dy/YelpCamp",
+    projectURL: "https://github.com/h0dy/hody-portfolio",
     tags: [
       "tailwindcss",
       "nextjs",
@@ -170,21 +185,19 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "4",
-    label: "next-store",
-    image: portfolioImage,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio quisquam delectus accusantium dolores reiciendis sunt mollitia ad, totam voluptate magnam, fugiat in porro consectetur. Quisquam numquam adipisci voluptatibus quos?",
-    gitURL: "https://github.com/h0dy/next-store",
-    projectURL: "https://github.com/h0dy/hody-portfolio",
-    tags: [
-      "tailwindcss",
-      "nextjs",
-      "react",
-      "typescript",
-      "supabase",
-      "prisma",
-    ],
-    featured: true,
+    id: "5",
+    label: "asteroids",
+    description: "asteroids game, a simple project from Boot.dev",
+    gitURL: "https://github.com/h0dy/asteroids",
+    tags: ["pygame", "python"],
+    featured: false,
+  },
+  {
+    id: "6",
+    label: "Bookbot",
+    description: "first project from boot.dev",
+    gitURL: "https://github.com/h0dy/Bookbot",
+    tags: ["python"],
+    featured: false,
   },
 ];

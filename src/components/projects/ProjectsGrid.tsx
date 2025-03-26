@@ -14,9 +14,11 @@ const ProjectsGrid = ({ list }: { list: Project[] }) => {
             }
           })}
         </div>
-        <Button className="capitalize place-items-center mt-5">
-          <Link href="/projects">see all</Link>
-        </Button>
+        <Link href="/projects" passHref>
+          <Button className="capitalize place-items-center mt-5 cursor-pointer">
+            See All
+          </Button>
+        </Link>
       </div>
     </>
   );

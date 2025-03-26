@@ -1,13 +1,13 @@
 import React from "react";
 import SectionTitle from "../navbar/SectionTitle";
-import BackEndGrid from "./BackEndGrid";
 import { BackEndTechnologies } from "@/utils/links";
+import GridContainer from "../global/GridContainer";
 
 const FrontEndSection = () => {
   return (
     <section className="my-20">
       <SectionTitle text="Back-end Technologies" />
-      <BackEndGrid list={BackEndTechnologies} />
+      <GridContainer list={BackEndTechnologies} />
     </section>
   );
 };

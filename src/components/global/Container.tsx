@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "../footer/Footer";
+// import Navbar from "@/components/navbar/Navbar";
+// import Footer from "../footer/Footer";
 
 const Container = ({
   children,
@@ -11,9 +11,9 @@ const Container = ({
 }) => {
   return (
     <div className={cn("mx-auto container px-3", className)}>
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="sticky bottom-0 left-0 w-full z-50">
+    <footer className="sticky bottom-0 left-0 w-full z-50 mx-auto container">
       <div className="border-b-2 border-foreground dark:border-white" />
       {/* <div className=""> */}
       <div className="backdrop-blur-xl py-2 capitalize text-center">

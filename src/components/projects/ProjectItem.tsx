@@ -31,21 +31,13 @@ const ProjectItem = ({ project }: { project: Project }) => {
     <Card className="w-full p-0">
       <CardHeader className="p-0">
         <div className="h-40 w-full relative">
-          {project.image ? (
-            <Image
-              alt={project.label}
-              src={project.image}
-              fill
-              className="object-cover"
-            />
-          ) : (
-            <Image
-              alt={project.label}
-              src={defaultImage}
-              fill
-              className="object-cover"
-            />
-          )}
+          <Image
+            alt={project.label}
+            src={project.image || defaultImage}
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </CardHeader>
       <CardContent>
@@ -63,19 +55,19 @@ const ProjectItem = ({ project }: { project: Project }) => {
         </CardDescription>
       </CardContent>
       <CardFooter className="flex justify-between relative mt-5">
-        <Button className="absolute left-0 right-1/2 bottom-0 cursor-pointer">
-          <a target="_blank" href={project.gitURL}>
+        <a target="_blank" href={project.gitURL}>
+          <Button className="absolute left-0 right-1/2 bottom-0 cursor-pointer">
             <Github />
-          </a>
-        </Button>
-        <Button
-          className="absolute right-0 left-1/2 bottom-0 cursor-pointer"
-          disabled={isNotDeployed}
-        >
-          <a target="_blank" className="" href={project.projectURL}>
+          </Button>
+        </a>
+        <a target="_blank" className="" href={project.projectURL}>
+          <Button
+            className="absolute right-0 left-1/2 bottom-0 cursor-pointer"
+            disabled={isNotDeployed}
+          >
             <Link />
-          </a>
-        </Button>
+          </Button>
+        </a>
       </CardFooter>
     </Card>
   );

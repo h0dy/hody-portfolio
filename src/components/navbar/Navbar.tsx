@@ -5,7 +5,7 @@ import HamNav from "./HamNav";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 left-0 w-full text-xl z-50">
+    <nav className="sticky top-0 left-0 w-full text-xl z-50 mx-auto container">
       <div className="backdrop-blur-xl py-2">
         <div className="flex justify-between items-center">
           <Logo />
