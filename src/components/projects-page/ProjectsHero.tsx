@@ -1,4 +1,3 @@
-import AlertBox from "@/components/global/AlertBox";
 import React from "react";
 
 const ProjectsHero = () => {
@@ -8,9 +7,8 @@ const ProjectsHero = () => {
         Projects
       </h1>
       <p className="sm:text-xl text-base sm:tracking-wide py-5 text-muted-foreground">
-        Here are some of my projects that I&apos;ve worked on
+        Here are my projects that I&apos;ve worked on
       </p>
-      <AlertBox text="Some projects may be unavailable due to inactivity, causing database downtime, while others run on free-tier hosting, leading to slower loading time." />
     </section>
   );
 };
