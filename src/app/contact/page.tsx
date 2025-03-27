@@ -1,14 +1,17 @@
+import ContactHero from "@/components/contact/ContactHero";
 import React from "react";
-import Loader from "@/components/Loader";
+import SocialsSection from "@/components/socials/SocialsSection";
+import EmailBox from "@/components/contact/EmailBox";
 
 const ContactPage = () => {
   return (
-    <section className="h-screen grid place-items-center">
-      <div className="flex flex-col items-center gap-y-2">
-        <h1 className="capitalize font-semibold text-xl">coming soon</h1>
-        <Loader />
+    <>
+      <ContactHero />
+      <EmailBox />
+      <div className="mb-64">
+        <SocialsSection />
       </div>
-    </section>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ const Container = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("mx-auto container px-3", className)}>
+    <div className={cn("mx-auto container  px-3", className)}>
       {/* <Navbar /> */}
       {children}
       {/* <Footer /> */}

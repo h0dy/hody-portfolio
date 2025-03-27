@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectsHero from "./ProjectsHero";
 import ProjectsSectionPage from "@/components/projects-page/ProjectsSectionPage";
+import ProjectsHero from "@/components/projects-page/ProjectsHero";
 
 const ProjectsPage = () => {
   return (
