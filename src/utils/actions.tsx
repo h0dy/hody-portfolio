@@ -16,7 +16,3 @@ export async function fetchNowPlayingAction() {
 
   return response.json();
 }
-
-// Then in a component (can be client or server component):
-// import { fetchDataAction } from './actions'
-// const data = await fetchDataAction()

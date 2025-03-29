@@ -9,11 +9,13 @@ const NowPlaying = async () => {
 
   const track = data.recenttracks.track[0];
   const { artist, image, name, url } = track;
-  const imageUrl = image[3]["#text"];
+  const imageUrl = image[3]["#text"] || albumCover;
 
   const trackName = name.length > 21 ? `${name.slice(0, 17)}...` : name;
   const trackArtist =
-    artist["#text"].length > 17 ? `${artist["#text"].slice(0, 17)}...` : artist;
+    artist["#text"].length > 17
+      ? `${artist["#text"].slice(0, 17)}...`
+      : artist["#text"];
   return (
     <div className="">
       <div className="flex gap-x-2 items-center mb-4">
@@ -25,7 +27,7 @@ const NowPlaying = async () => {
           <div className="size-14 relative">
             <Image
               alt="song"
-              src={imageUrl || albumCover}
+              src={imageUrl}
               fill
               className="object-cover rounded"
               priority
@@ -33,7 +35,6 @@ const NowPlaying = async () => {
           </div>
           <div className="flex flex-col w-52">
             <p className="max-sm:text-sm">{trackName}</p>
-            {/* <p className="text-muted-foreground">{artist["#text"]}</p> */}
             <p className="text-muted-foreground max-sm:text-xs">
               {trackArtist}
             </p>
