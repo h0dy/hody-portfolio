@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiPrisma } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { TbBrandRedux } from "react-icons/tb";
 import portfolioImage from "@/../public/images/portfolio.png";
 import nextStoreImage from "@/../public/images/next-store.png";
 import MERNAuth from "@/../public/images/MERN-auth.png";
@@ -38,11 +37,6 @@ export const languages: TechItem[] = [
     url: "https://www.typescriptlang.org/docs/",
   },
   {
-    label: "Nextjs",
-    icon: <RiNextjsLine />,
-    url: "https://nextjs.org/",
-  },
-  {
     label: "python",
     icon: <FaPython />,
     url: "https://docs.python.org/3/",
@@ -61,6 +55,11 @@ export const FrontEndTechnologies: TechItem[] = [
     url: "https://tailwindcss.com/",
   },
   {
+    label: "Nextjs",
+    icon: <RiNextjsLine />,
+    url: "https://nextjs.org/",
+  },
+  {
     label: "React",
     icon: <FaReact />,
     url: "https://react.dev/",
@@ -74,11 +73,6 @@ export const FrontEndTechnologies: TechItem[] = [
     label: "Bootstrap",
     icon: <FaBootstrap />,
     url: "https://getbootstrap.com/",
-  },
-  {
-    label: "Redux Toolkit",
-    icon: <TbBrandRedux />,
-    url: "https://redux-toolkit.js.org/",
   },
 ];
 

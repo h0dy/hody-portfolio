@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="border-b-2 border-foreground dark:border-white" />
       {/* <div className=""> */}
       <div className="backdrop-blur-xl py-2 capitalize text-center">
-        Made with 💖 by{" "}
+        Made with 💖 by
         <a
           target="_blank"
           className="font-semibold hover:underline"
