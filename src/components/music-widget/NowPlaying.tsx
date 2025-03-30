@@ -5,7 +5,7 @@ import Image from "next/image";
 import albumCover from "@/../public/images/albumCover.png";
 import useSWR from "swr";
 import { Music } from "lucide-react";
-import Loader from "../Loader";
+import NowPlayingSkelton from "./NewPlayingSkelton";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -13,8 +13,7 @@ const NowPlaying = () => {
   const { data, isLoading } = useSWR("/api/now-playing", fetcher, {
     refreshInterval: 10000,
   });
-  if (isLoading) return <Loader />;
-  console.log("Fetched Data:", data);
+  if (isLoading) return <NowPlayingSkelton />;
 
   const track = data.recenttracks.track[0];
   const { artist, image, name, url } = track;
@@ -32,8 +31,8 @@ const NowPlaying = () => {
         <Music />
         <p className="text-xl font-semibold">Listening to</p>
       </div>
-      <a href={url} className="" target="_blank">
-        <div className="now-playing-card">
+      <div className="">
+        <a href={url} className="now-playing-card" target="_blank">
           <div className="size-14 relative">
             <Image
               alt="song"
@@ -50,8 +49,8 @@ const NowPlaying = () => {
             </p>
           </div>
           <AudioWave />
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,6 @@ export async function GET() {
     const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=hody_&api_key=${apiKey}&format=json`;
 
     const res = await fetch(url, { cache: "no-store" });
-    console.log("API Response Status:", res.status);
 
     if (!res.ok) {
       return new Response(
@@ -23,7 +22,6 @@ export async function GET() {
     }
 
     const data = await res.json();
-    console.log("Fetched Data:", data);
 
     return new Response(JSON.stringify(data), {
       status: 200,
