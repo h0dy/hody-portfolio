@@ -1,11 +1,20 @@
-import { fetchNowPlayingAction } from "@/utils/actions";
+"use client";
+
 import AudioWave from "./AudioWave";
 import Image from "next/image";
 import albumCover from "@/../public/images/albumCover.png";
+import useSWR from "swr";
 import { Music } from "lucide-react";
+import Loader from "../Loader";
 
-const NowPlaying = async () => {
-  const data = await fetchNowPlayingAction();
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+const NowPlaying = () => {
+  const { data, isLoading } = useSWR("/api/now-playing", fetcher, {
+    refreshInterval: 10000,
+  });
+  if (isLoading) return <Loader />;
+  console.log("Fetched Data:", data);
 
   const track = data.recenttracks.track[0];
   const { artist, image, name, url } = track;
@@ -16,6 +25,7 @@ const NowPlaying = async () => {
     artist["#text"].length > 17
       ? `${artist["#text"].slice(0, 17)}...`
       : artist["#text"];
+
   return (
     <div className="">
       <div className="flex gap-x-2 items-center mb-4">
