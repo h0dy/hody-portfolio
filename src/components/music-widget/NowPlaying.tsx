@@ -33,7 +33,7 @@ const NowPlaying = () => {
       </div>
       <div className="">
         <a href={url} className="now-playing-card" target="_blank">
-          <div className="size-14 relative">
+          <div className="size-14 mr-5 relative">
             <Image
               alt="song"
               src={imageUrl}
@@ -42,11 +42,9 @@ const NowPlaying = () => {
               priority
             />
           </div>
-          <div className="flex flex-col w-52">
-            <p className="max-sm:text-sm">{trackName}</p>
-            <p className="text-muted-foreground max-sm:text-xs">
-              {trackArtist}
-            </p>
+          <div className="flex flex-col grow mr-5">
+            <p className="">{trackName}</p>
+            <p className="text-muted-foreground">{trackArtist}</p>
           </div>
           <AudioWave />
         </a>

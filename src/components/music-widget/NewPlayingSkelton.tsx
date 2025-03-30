@@ -21,11 +21,11 @@ const NowPlayingSkelton = () => {
         <Music />
         <p className="text-xl font-semibold">Listening to</p>
       </div>
-      <div className="now-playing-card">
-        <Skeleton className="h-12 w-12 rounded-full" />
-        <div className="space-y-2">
-          <Skeleton className="h-4 w-[200px]" />
-          <Skeleton className="h-4 w-[150px]" />
+      <div className="now-playing-card gap-x-5">
+        <Skeleton className="h-12 w-12 rounded" />
+        <div className="space-y-2 grow">
+          <Skeleton className="h-4 max-w-[175px]" />
+          <Skeleton className="h-4 max-w-[125px]" />
         </div>
         <div className="flex gap-x-2 items-center">
           <Skeleton className="w-2 h-4" />
