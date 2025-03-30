@@ -1,11 +1,10 @@
 "use client";
 
-import AudioWave from "./AudioWave";
-import Image from "next/image";
 import albumCover from "@/../public/images/albumCover.png";
 import useSWR from "swr";
 import { Music } from "lucide-react";
-import NowPlayingSkelton from "./NewPlayingSkelton";
+import NowPlayingSkelton from "./NowPlayingSkelton";
+import NowPlayingHorizontal from "./NowPlayingHorizontal";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -19,7 +18,7 @@ const NowPlaying = () => {
   const { artist, image, name, url } = track;
   const imageUrl = image[3]["#text"] || albumCover;
 
-  const trackName = name.length > 21 ? `${name.slice(0, 17)}...` : name;
+  const trackName = name.length > 20 ? `${name.slice(0, 17)}...` : name;
   const trackArtist =
     artist["#text"].length > 17
       ? `${artist["#text"].slice(0, 17)}...`
@@ -31,24 +30,12 @@ const NowPlaying = () => {
         <Music />
         <p className="text-xl font-semibold">Listening to</p>
       </div>
-      <div className="">
-        <a href={url} className="now-playing-card" target="_blank">
-          <div className="size-14 mr-5 relative">
-            <Image
-              alt="song"
-              src={imageUrl}
-              fill
-              className="object-cover rounded"
-              priority
-            />
-          </div>
-          <div className="flex flex-col grow mr-5">
-            <p className="">{trackName}</p>
-            <p className="text-muted-foreground">{trackArtist}</p>
-          </div>
-          <AudioWave />
-        </a>
-      </div>
+      <NowPlayingHorizontal
+        url={url}
+        imageUrl={imageUrl}
+        trackName={trackName}
+        trackArtist={trackArtist}
+      />
     </div>
   );
 };
