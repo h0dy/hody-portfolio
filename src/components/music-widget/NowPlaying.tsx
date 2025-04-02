@@ -9,10 +9,11 @@ import NowPlayingHorizontal from "./NowPlayingHorizontal";
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const NowPlaying = () => {
-  const { data, isLoading } = useSWR("/api/now-playing", fetcher, {
+  const { data, isLoading, error } = useSWR("/api/now-playing", fetcher, {
     refreshInterval: 10000,
   });
   if (isLoading) return <NowPlayingSkelton />;
+  if (error) return <NowPlayingSkelton />;
 
   const track = data.recenttracks.track[0];
   const { artist, image, name, url } = track;
