@@ -78,7 +78,7 @@ export const FrontEndTechnologies: TechItem[] = [
 
 export const BackEndTechnologies: TechItem[] = [
   {
-    label: "NodeJs",
+    label: "NodeJS",
     icon: <FaNodeJs />,
     url: "https://nodejs.org/en",
   },
