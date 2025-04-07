@@ -93,7 +93,7 @@ export const BackEndTechnologies: TechItem[] = [
     url: "https://www.mongodb.com/",
   },
   {
-    label: "PosteSQL",
+    label: "PostegreSQL",
     icon: <BiLogoPostgresql />,
     url: "https://www.postgresql.org/",
   },
