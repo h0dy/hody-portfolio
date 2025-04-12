@@ -12,12 +12,11 @@ const NowPlaying = () => {
   const { data, isLoading, error } = useSWR("/api/now-playing", fetcher, {
     refreshInterval: 10000,
   });
-  if (isLoading) return <NowPlayingSkelton />;
-  if (error) return <NowPlayingSkelton />;
+  if (isLoading || error) return <NowPlayingSkelton />;
 
-  const track = data.recenttracks.track[0];
+  const track = data?.recenttracks?.track?.[0];
   const { artist, image, name, url } = track;
-  const imageUrl = image[3]["#text"] || albumCover;
+  const imageUrl = image[3]["#text"] || albumCover; 
 
   const trackName = name.length > 20 ? `${name.slice(0, 17)}...` : name;
   const trackArtist =
