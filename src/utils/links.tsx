@@ -14,6 +14,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import portfolioImage from "@/../public/images/portfolio.png";
 import nextStoreImage from "@/../public/images/next-store.png";
 import MERNAuth from "@/../public/images/MERN-auth.png";
+import staticSiteGenerator from "@/../public/images/static-site-generator.png";
 
 import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
 import { Github, Instagram } from "lucide-react";
@@ -166,7 +167,7 @@ export const projects: Project[] = [
     projectURL: "https://mern-auth-g5hn.onrender.com/login",
     image: MERNAuth,
     tags: ["Tailwindcss", "React", "Javascript", "ExpressJS", "MongoDB"],
-    featured: true,
+    featured: false,
   },
   {
     id: "4",
@@ -192,5 +193,15 @@ export const projects: Project[] = [
     gitURL: "https://github.com/h0dy/Bookbot",
     tags: ["Python"],
     featured: false,
+  },
+  {
+    id: "7",
+    label: "Static Site Generator",
+    description: "This is a static site generator that converts Markdown files into fully functional HTML pages.",
+    gitURL: "https://github.com/h0dy/static-site-generator",
+    projectURL: "https://h0dy.github.io/static-site-generator/",
+    image: staticSiteGenerator,
+    tags: ["Python"],
+    featured: true,
   },
 ];
