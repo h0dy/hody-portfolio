@@ -1,4 +1,4 @@
-import NowPlaying from "../music-widget/NowPlaying";
+// import NowPlaying from "../music-widget/NowPlaying";
 import DynamicTitle from "./DynamicTitle";
 import HeroDescription from "./HeroDescription";
 
