@@ -12,7 +12,7 @@ const Hero = () => {
     <section className="hero-container">
       <DynamicTitle titles={titles} />
       <HeroDescription text={description} />
-      <NowPlaying />
+{/*       <NowPlaying /> */}
     </section>
   );
 };
