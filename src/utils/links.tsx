@@ -7,7 +7,6 @@ import {
   FaBootstrap,
   FaNodeJs,
   FaDiscord,
-  FaLinkedin,
 } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiPrisma } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -121,11 +120,6 @@ export const socials: TechItem[] = [
     label: "Discord",
     icon: <FaDiscord />,
     url: "https://discordapp.com/users/637722754791243873",
-  },
-  {
-    label: "Linkedin",
-    icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/hassan-al-sawlan-5723b52a3/",
   },
 ];
 
