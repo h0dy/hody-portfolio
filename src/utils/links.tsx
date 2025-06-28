@@ -17,7 +17,8 @@ import staticSiteGenerator from "@/../public/images/static-site-generator.png";
 
 import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
 import { Github, Instagram } from "lucide-react";
-// import { FaGolang } from "react-icons/fa6";
+import { FaGolang } from "react-icons/fa6";
+import { BsCCircle } from "react-icons/bs";
 import { NavLink, TechItem, Project } from "./types";
 
 export const navLinks: NavLink[] = [
@@ -42,11 +43,16 @@ export const languages: TechItem[] = [
     icon: <FaPython />,
     url: "https://docs.python.org/3/",
   },
-  // {
-  //   label: "golang",
-  //   icon: <FaGolang />,
-  //   url: "https://go.dev/doc/",
-  // },
+  {
+    label: "golang",
+    icon: <FaGolang />,
+    url: "https://go.dev/doc/",
+  },
+  {
+    label: "c language",
+    icon: <BsCCircle />,
+    url: "https://devdocs.io/c/",
+  },
 ];
 
 export const FrontEndTechnologies: TechItem[] = [
